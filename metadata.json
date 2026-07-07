@@ -1,0 +1,6 @@
+{
+  "name": "우리반 네컷",
+  "description": "유치원 친구들을 위한 귀엽고 깜찍한 네컷 사진 찍기 앱",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

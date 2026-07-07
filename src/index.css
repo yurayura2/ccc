@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Dongle:wght@400;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Gaegu", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-dongle: "Dongle", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Clean Minimalism Theme Palette */
+  --color-brand-bg: #FFF9E6;
+  --color-brand-border: #FFD1DC;
+  --color-brand-pink: #FF85A1;
+  --color-brand-dark: #4A4A4A;
+  --color-brand-pink-dark: #E06C88;
+}
+
+/* Custom bounce & float animations to make the UI look alive and cute */
+@keyframes cute-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes cute-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: cute-float 4s ease-in-out infinite;
+}
+
+.animate-cute-pulse {
+  animation: cute-pulse 2s ease-in-out infinite;
+}
+
+/* Scrollbar styling for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
